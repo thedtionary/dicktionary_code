@@ -9,7 +9,7 @@ import {
               <Link to={'/info'} style={{
                  textDecoration: 'none', 
                  color: props.color
-                 }}>find out more about dicktionary.uk</Link>
+                 }}>find out more about dicktionary.uk checking</Link>
     </div>
   )
 }
