@@ -12,7 +12,7 @@ export default function Home() {
     let history = useHistory();
     function handleClick(slug) {
         history.push("/term/"+ slug);
-        window.location.reload()
+        //window.location.reload()
       }
 
 useEffect(()=>{
@@ -23,6 +23,11 @@ Axios.get('https://the-dicktionary.herokuapp.com/api/distinctname').then((data)=
 },[])
 
 
+useEffect(() => {
+  return history.listen((location) => { 
+     console.log(`You changed the page to: ${location.pathname}`) 
+  }) 
+},[history])  
 
 const [widths, setWindowWidth] = useState(0)
 useEffect(() => { 

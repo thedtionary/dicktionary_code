@@ -4,26 +4,32 @@ import Home from './pages/Home';
 import Term from './pages/Term';
 import FormPage from './pages/FormPage';
 import Info from './pages/Info';
+import Thank from './pages/Thank';
 
 
 const App = () => {
   return (
+    <>
     <Router>
       <Switch>
-        <Route exact path="/">
+        <Route  exact path='/' >
           <Home/>
         </Route>
-        <Route path ="/term/:slug">
+        <Route path ='/term/:slug'>
           <Term />
         </Route>
-        <Route path="/info">
+        <Route exact path='/info'>
           <Info/>
         </Route>
-        <Route path="/form">
+        <Route exact path='/form'>
           <FormPage />
+        </Route>
+        <Route  exact path='/thankyou'>
+          <Thank />
         </Route>
       </Switch>
     </Router>
+    </>
   );
 };
 

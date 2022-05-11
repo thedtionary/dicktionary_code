@@ -2,28 +2,43 @@ import React from 'react'
 
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import cursor from '../images/cursor-61.png';
 
 export default function Form() {
     
     const [inputs, setInputs] = useState([]);
 
+
+    
+    let history = useHistory();
+    function handleClick() {
+        history.push("/thankyou");
+        window.location.reload()
+      }
+
+
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
         setInputs(values => ({...values, [name]: value}));
     }
+
+
     const handleSubmit = (event) => {
         event.preventDefault();
+        const name = 'date';
+        setInputs(values => ({...values, [name]: date}));
 
+        console.log(inputs)
         axios.post('https://the-dicktionary.herokuapp.com/api/term', inputs).then(function (response) {
             console.log(response.data);
-            
+            handleClick();
         });
 
     }
-
+    let newDate = new Date();
+    let date =  newDate.getDate();
         return (
             <div>
                 <div>

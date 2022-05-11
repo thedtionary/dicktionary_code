@@ -111,17 +111,53 @@ input[type=submit] {
 .special_button {
   padding: 20px;
   font-family:all-round-gothic_bolder;
+  cursor: pointer;
 }
+
+.special_button :hover {
+ cursor: pointer;
+} 
 
 .container {
   display: inline-block;
+  align-items: center;
   padding-left: 2%;
 }
 
 
 .link_image{
+  position:fixed;
+  bottom: 0;
+  right:0;
+  padding: 5%;
+}
 
-  position: fixed;
+.back_image{
+  position:fixed;
+  font-family:all-round-gothic;
+  top: 0;
+  left:0;
+  color: #ff48b0;
+  text-decoration: none;
+  padding: 1%;
+  padding-left: 2%;
+  font-size: 60px;
+}
+
+.posts{
+  font-family:all-round-gothic;
+  color: #ff48b0;
+  font-size: 20px;
+  width:1000px;
+  padding: 5%;
+}
+
+.one_post{
+  padding-bottom: 1.5%;
+}
+
+.date{
+  font-family:all-round-gothic_bolder;
 }
 
 .footer {
@@ -129,8 +165,10 @@ input[type=submit] {
   font-family:all-round-gothic_bolder;
   position:fixed;
   bottom: 0;
+  right:0;
   padding: 2%;
-  font-size: 20px;
+  padding-right: 4%;
+  font-size: 25px;
 
 }
 
