@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.center_form {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text_header{
+  text-decoration: none;
+font-family: all-round-gothic_bolder;
+font-size: 70px;
+font-weight: bolder;
+color: #fee80c;
+font-weight:bold;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: -15%;
+}
+
+.text_header_pink{
+   text-decoration: none;
+  font-family: all-round-gothic_bolder;
+  font-size: 70px;
+  font-weight: bolder;
+  color: #ff48b0;
+  font-weight:bold;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: -15%;
+  }
+  
+.link {
+  text-decoration: none;
+}
+
+.form {
+  min-width: 100%;
+  font-size: 20px;
+   border: none;
+    color: #fee80c; 
+    font-family:all-round-gothic;
+}
+
+
+
+.form_input {
+border-radius: 16px;
+font-family:all-round-gothic_bolder;
+border: 1px solid #c74f98;
+box-sizing: border-box;
+padding: 15px 25px;
+ margin: 8px 0;
+ background-color: #ffc2de;
+ width: 740px;
+ color: #ff48b0;
+ 
+}
+
+.form_input textarea {
+  padding: 50px 40px;
+}
+.some_padding1 {
+  padding-bottom: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .form_input{
+    padding: 15px 15px;
+    width: 410px;
+  }
+}
+
+
+input[type=submit] {
+  background: url(images/cursor-61.png);
+  border: 0;
+  display: block;
+  height: _the_image_height;
+  width: _the_image_width;
+}
+
+.button_submit {
+  float:right;
+}
+
+.special_button {
+  padding: 20px;
+  font-family:all-round-gothic_bolder;
+}
+
+.container {
+  display: inline-block;
+  padding-left: 2%;
+}
+
+
+.link_image{
+
+  position: fixed;
+}
+
+.footer {
+  text-decoration: none;
+  font-family:all-round-gothic_bolder;
+  position:fixed;
+  bottom: 0;
+  padding: 2%;
+  font-size: 20px;
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+  
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="text_header_"] {
+    font-size: 50px;
+  }
+
+
+}

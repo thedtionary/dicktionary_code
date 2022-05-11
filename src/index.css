@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "all-round-gothic";
+  src: local("all-round-gothic"),
+    url("./fonts/all-round-gothic.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "all-round-gothic_bolder";
+  src: local("all-round-gothic_bolder"),
+    url("./fonts/all-round-gothic_bolder.ttf") format("truetype");
+  font-weight: bold;
+}
