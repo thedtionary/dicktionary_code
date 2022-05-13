@@ -27,10 +27,34 @@
   transform: translate(-50%, -50%);
 }
 
+
+.bolded {  font-family: all-round-gothic_bolder;}
+
+
+.info {
+  top: 50%;
+  align-items: center;
+  justify-content: center;
+  font-family: all-round-gothic;
+  color: #F7C5DD;
+  width: 900px;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.info_list {
+  
+  padding-left: 3%;
+  text-align: left;
+
+}
+
+
 .text_header{
   text-decoration: none;
 font-family: all-round-gothic_bolder;
-font-size: 70px;
+font-size: 65px;
 font-weight: bolder;
 color: #fee80c;
 font-weight:bold;
@@ -55,6 +79,7 @@ display: flex;
   
 .link {
   text-decoration: none;
+  color: #F7C5DD;
 }
 
 .form {
@@ -124,33 +149,54 @@ input[type=submit] {
   padding-left: 2%;
 }
 
-
-.link_image{
-  position:fixed;
-  bottom: 0;
-  right:0;
-  padding: 5%;
-}
-
 .back_image{
-  position:fixed;
+  position:absolute;
   font-family:all-round-gothic;
   top: 0;
   left:0;
   color: #ff48b0;
   text-decoration: none;
   padding: 1%;
-  padding-left: 2%;
+  padding-left: 1%;
+  padding-top: 1%;
   font-size: 60px;
 }
+
+
+
+.link_image{
+  position:fixed;
+  bottom: 0;
+  right:0;
+  padding-bottom: 5%;
+  padding-right: 3%;
+  
+}
+
+
 
 .posts{
   font-family:all-round-gothic;
   color: #ff48b0;
-  font-size: 20px;
-  width:1000px;
+  font-size: 18px;
+  width:800px;
   padding: 5%;
+  padding-left: 6%;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .posts {
+    width:450px;
+    font-size: 16px;
+  } 
+  .link_image {
+    background-color: #fee80c;
+    padding-right: 10%;
+    padding-bottom: 6%;
+  }
+}
+
 
 .one_post{
   padding-bottom: 1.5%;
@@ -169,7 +215,14 @@ input[type=submit] {
   padding: 2%;
   padding-right: 4%;
   font-size: 25px;
+}
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .footer{
+    font-size: 20px;
+    right:0;
+  }
 }
 
 @keyframes App-logo-spin {

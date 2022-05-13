@@ -5,6 +5,7 @@ import Term from './pages/Term';
 import FormPage from './pages/FormPage';
 import Info from './pages/Info';
 import Thank from './pages/Thank';
+import Enter from './pages/Enter';
 
 
 const App = () => {
@@ -12,7 +13,10 @@ const App = () => {
     <>
     <Router>
       <Switch>
-        <Route  exact path='/' >
+      <Route  exact path='/' >
+          <Enter/>
+          </Route>
+        <Route  exact path='/home' >
           <Home/>
         </Route>
         <Route path ='/term/:slug'>

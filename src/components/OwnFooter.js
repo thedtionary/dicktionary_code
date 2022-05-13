@@ -8,7 +8,8 @@ import {
     <div className='footer'>
               <Link to={'/info'} style={{
                  textDecoration: 'none', 
-                 color: props.color
+                 color: props.color,
+                 backgroundColor: props.back
                  }} >find out more about dicktionary.uk</Link>
     </div>
   )

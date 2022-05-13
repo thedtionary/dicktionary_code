@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import Axios from 'axios'
 import { useHistory } from "react-router-dom";
+import Helmet from 'react-helmet';
 import TermName from '../components/TermName';
 import OwnFooter from '../components/OwnFooter';
 
@@ -52,6 +53,7 @@ useEffect(() => {
     return (
         <>
             <div>
+            <Helmet bodyAttributes={{style: 'background-color : #ff48b0'}}/>
             {termList.map(txt => 
             <div class="container">
                 {responsive.size_change?
@@ -63,7 +65,7 @@ useEffect(() => {
             </div>
             )}
             </div>
-            <OwnFooter color = "#F7C5DD"/>
+            <OwnFooter color = "#F7C5DD" back="#ff48b0"/>
         </>
     );
 }

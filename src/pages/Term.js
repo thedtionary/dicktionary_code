@@ -3,7 +3,7 @@ import Axios from 'axios'
 import { useParams, useHistory } from "react-router-dom";
 import Helmet from 'react-helmet';
 import image from '../images/posters.png';
-import image2 from '../images/cursor-61.png';
+import image2 from '../images/arrow_pink.png';
 import {Link} from "react-router-dom";
 import OwnFooter from '../components/OwnFooter';
 
@@ -34,15 +34,19 @@ Axios.get('https://the-dicktionary.herokuapp.com/api/termsname',{
      <Helmet bodyAttributes={{style: 'background-color : #fdea25'}}/>
       <h1 className='text_header_pink'>{slug}</h1>
       <Link className="back_image"
-to="/" > 
-←
+to="/home" > 
+<img
+            src={image2}
+            alt="example"
+            width="59" height="32"
+          />
         </Link>
 
 <div className='posts'>
 {termList.map(function(d, idx){
          return (<div className='one_post'>
            <h1 className='date'>{d.date}</h1>
-         <h2 >{d.term}</h2>
+         <h2 >{d.story}</h2>
          </div>
          )
        })}
@@ -55,10 +59,11 @@ to="/form" >
           <img className="link_image"
             src={image}
             alt="example"
-            width="539" height="441"
+            width="409" height="331"
           />
         </Link>
-        <OwnFooter color="#ff48b0"/>
+        <OwnFooter color="#ff48b0" back='#fdea25'/>
     </div>
+
   )
 }
