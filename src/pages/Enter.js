@@ -9,7 +9,7 @@ export default function Enter() {
   return (
     <div>
         <Helmet bodyAttributes={{style: 'background-color : #ff48b0'}}/>
-        <div className='center_form'>
+        <div className='center_dick'>
         <Link 
 to="/home" > 
           <img 
