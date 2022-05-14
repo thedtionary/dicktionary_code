@@ -43,11 +43,13 @@ useEffect(() => {
  const updateDimensions = () => {
    const widths = window.innerWidth
    setWindowWidth(widths)
+   console.log(widths);
 
  }
 
  const responsive = {
     size_change: widths > 768
+    
   }
 
     return (

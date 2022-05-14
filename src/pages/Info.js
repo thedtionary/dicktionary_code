@@ -29,7 +29,7 @@ women, that these terms do not define them in a negative way. On the
 contrary, they exemplify their strength, beauty, empathy, and
 independence, which others have found difficult to come to terms with.
 </p>
-Dicktionary is a safe space in which you can  <Link to={'/form'} className="link"><span class="bolded"> share your own story</span></Link> or
+Dicktionary is a safe space in which you can  <Link to={'/form'} className="link"><span class="bolded" style = {{color:'#fee80c'}}> share your own story</span></Link> or
 simply find strength in those of others.
 </div>
 

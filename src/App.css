@@ -60,6 +60,14 @@
 }
 
 
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  .info{
+    font-size: 20px;
+    width: 500px;
+  }
+}
+
 .text_header{
   text-decoration: none;
 font-family: all-round-gothic_bolder;
@@ -143,7 +151,7 @@ input[type=submit] {
 }
 
 .special_button {
-  padding: 20px;
+  padding: 25px;
   font-family:all-round-gothic_bolder;
   cursor: pointer;
 }
@@ -166,7 +174,7 @@ input[type=submit] {
   color: #ff48b0;
   text-decoration: none;
   padding: 1%;
-  padding-left: 1%;
+  padding-left: 2%;
   padding-top: 1%;
   font-size: 60px;
 }
@@ -218,13 +226,54 @@ input[type=submit] {
 .footer {
   text-decoration: none;
   font-family:all-round-gothic_bolder;
-  position:fixed;
-  bottom: 0;
   right:0;
   padding: 2%;
-  padding-right: 4%;
+  
   font-size: 25px;
 }
+
+.footer_container{
+  text-align: right;
+  bottom: 0;
+  position:fixed;
+  height: 30px;
+  
+  width: 100%;
+
+  
+}
+
+.main_footer {
+
+    text-decoration: none;
+    font-family:all-round-gothic_bolder;
+    position:fixed;
+    bottom: 0;
+    right:0;
+    padding: 2%;
+    padding-right: 4%;
+    font-size: 25px;
+}
+
+
+.termfoot_container{
+  text-align: right;
+  bottom: 0;
+  position:fixed;
+ 
+  background-color: #fee80c;
+  width: 100%;
+
+  
+} 
+
+@media only screen and (max-width: 1300px) {
+  /* For mobile phones: */
+  .termfoot_container {
+    height: 370px;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */

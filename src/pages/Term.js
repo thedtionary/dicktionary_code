@@ -53,7 +53,7 @@ to="/home" >
 
 </div>
 
-
+<div className='termfoot_container'> 
 <Link className="link_image"
 to="/form" > 
           <img className="link_image"
@@ -61,9 +61,10 @@ to="/form" >
             alt="example"
             width="409" height="331"
           />
-        </Link>
+        </Link> 
+         </div>
         <OwnFooter color="#ff48b0" back='#fdea25'/>
     </div>
-
+  
   )
 }

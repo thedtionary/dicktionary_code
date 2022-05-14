@@ -5,12 +5,12 @@ import {
 
  function OwnFooter(props) {
   return (
-    <div className='footer'>
+  
+    <div className='footer_container' style={{backgroundColor: props.back}}>
               <Link to={'/info'} style={{
                  textDecoration: 'none', 
                  color: props.color,
-                 backgroundColor: props.back
-                 }} >find out more about dicktionary.uk</Link>
+                 }}  className={'footer'}>find out more about dicktionary.uk</Link>
     </div>
   )
 }
